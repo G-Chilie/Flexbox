@@ -1,0 +1,129 @@
+/* Box-sizing border-box */
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+
+ body {
+     font-family: sans-serif;
+     margin: 0;
+     background-image: linear-gradient(260deg, #1a53bc 0%, #811abc 100%);
+ }
+
+ a{
+     color: white;
+ }
+
+ .plan ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+ }
+
+ .plan ul li {
+     border-bottom: 1px solid rgba(0,0,0,0.1);
+     padding: 10px;
+ }
+
+ .plan ul li:last-child {
+    border-bottom: 0;
+}
+
+.plan a {
+    text-decoration: none;
+    background: #cbce2e;
+    padding: 10px;
+    color: black;
+    border-radius: 4px;
+    
+}
+
+.plan h2 {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+    /* border: 1px solid black */
+}
+
+.price {
+    font-size: 50px;
+    font-family: serif;
+    margin: 10px 0;
+}
+
+/* Flex container */
+.pricing-grid {
+    max-width: 750px;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+}
+
+.plan {
+    flex: 1;
+    background: rgb(255, 255, 255, 0.2); 
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex:1;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.plan > * {
+    flex:1;
+    flex-basis: 100%;
+}
+
+.plan .cta {
+    align-self:flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Some default styles to make each box visible */
+ .box {
+     color: white;
+     font-size: 100px;
+     text-align: center;
+     text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+     padding: 10px;
+ }
+
+ /* Colours for each box */
+ .box1 {background: #1abc9c;}
+ .box2 {background: #1a53bc;}
+ .box3 {background: #811abc;}
+ .box4 {background: #3d4b48;}
+ .box5 {background: #b9bc1a;}
+ .box6 {background: #bc701a;}
+ .box7 {background: #bc321a;}
+ .box8 {background: #ced6d5;}
+ .box9 {background: #023517;}
+ .box10 {background: #c9fff4;}
+
+ /* We start writing out flexbox here. The above is just page setup */
+ .container{
+     display: flex;  
+     flex-wrap: wrap;  
+ }
+ .box{
+     flex-basis: 500px;
+     flex-grow:1;
+ }
+
+ .box3{
+    flex-grow:10;
+}
